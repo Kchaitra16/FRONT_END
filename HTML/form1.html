@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20;
+            padding: 20;
+            background-color: white;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        form {
+            background:purple;
+            padding: 20px;
+            text-align: center;
+            border-radius: 8px;
+            width: 300px;
+
+        }
+
+        h1 {
+            text-align: center;
+            font-size: 1.5em;
+            color: black;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: bold;
+            color: white;
+            text-align:left;
+        }
+
+        input, textarea, button {
+            width: 100%;
+            margin-bottom: 15px;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            font-size: 1em;
+        }
+
+        input:focus, textarea:focus {
+            border-color: blue;
+            outline: none;
+            box-shadow: 0 0 4px rgba(0, 123, 255, 0.25);
+        }
+
+        button {
+            background-color: blueviolet;
+            color: white;
+            font-weight: bold;
+            border: none;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color:pink;
+        }
+
+            .error{
+            color: red;
+            font-size: 1rem;
+        }
+    </style>
+</head>
+<body>
+    <h1>student form</h1>
+    <form action="/submit-form" method="post">
+        <label for="name">Name:</label><br>
+        <input type="text" id="name" name="name" required><br><br>
+
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" name="email" required><br><br>
+
+        <label for="password">password:</label><br>
+        <textarea id="password" name="password" required></textarea><br><br>
+
+        <label for="message">Message:</label><br>
+        <textarea id="message" name="message" rows="4" cols="30" required></textarea><br><br>
+
+
+        <button type="submit">Submit</button>
+
+        <p id="errorMessage" class="error"></p>
+    </form>
+
+    <script>
+        const form = document.getElementById("myForm");
+        const errorMessage = document.getElementById("errorMessage");
+
+
+form.addEventListener('submit', function (event){
+    errorMessage.textContent="";
+
+    const password = document.getElementById("password").value;
+    if(password.length <6){
+        event.preventDefault();
+        errorMessage.textContent = "Password must be atleast 6 characters long "
+    }
+});
+
+    </script>
+</body>
+</html>
