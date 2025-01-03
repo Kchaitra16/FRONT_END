@@ -152,7 +152,7 @@ ul li a:hover {
 
 .hire__me {
   background-color: var(--primary-color);
-  color: #ffffff;
+  color: white;
 }
 
 .hire__me:hover {
@@ -165,7 +165,7 @@ ul li a:hover {
 
 .portfolio:hover {
   background-color: var(--primary-color-dark);
-  color: #ffffff;
+  color: white;
 }
 
 .image {
@@ -174,23 +174,25 @@ ul li a:hover {
 }
 
 .image img {
-  width: min(25rem, 90%);
+  width: min(50rem, 100%);
   border-radius: 100%;
 }
 
 .social__media {
   text-align: left;
-  margin-top: 20px;
+  margin-top: 50px;
+  gap: 4rem;
 }
 .social__media a {
   margin: 0 10px;
   text-decoration: none;
-  color: #333;
+  color: black;
   font-size: 24px;
   transition: color 0.3s;
+  
 }
 .social__media a:hover {
-  color: #007bff;
+  color: black;
 }
 
 @media (width < 750px) {
@@ -225,7 +227,7 @@ ul li a:hover {
   }
 
   .image {
-    grid-area: 1/1/2/2;
+    grid-area: 1/1/5/5;
   }
 
   .action__btns {
