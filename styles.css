@@ -183,8 +183,10 @@ ul li a:hover {
 
 .social__media {
   text-align: left;
+  height: 100%;
+  width: 100%;
   margin-top: 100px;
-  gap: 300rem;
+  gap: 30rem;
 }
 .social__media a {
   margin: 10px;
@@ -197,66 +199,9 @@ ul li a:hover {
 }
 .social__media a:hover {
   color: black;
-  width: 10%;
-  height: 10%;
+  width: 100%;
+  height: 100%;
 }
-.ri-github-fill{
-  display: flex;
-  padding: 10px;
-  min-height: 10px;
-  width: 30px;
-
-}
-.ri-github-fill:hover{
-  background-color: #a855f7;
-  color: black;
-  border-radius: 2px;
-  border: #a855f7;
-
-}
-.ri-instagram-fill{
-  display: flex;
-  padding: 10px;
-  min-height: 10px;
-  width: 30px;
-
-}
-.ri-instagram-fill:hover{
-  background-color: #a855f7;
-  color: black;
-  border-radius: 2px;
-  border: #a855f7;
-}
-.ri-twitter-fill{
-  display: flex;
-  padding: 10px;
-  min-height: 10px;
-  width: 30px;
-
-}
-.ri-twitter-fill:hover{
-  background-color: #a855f7;
-  color: black;
-  border-radius: 2px;
-  border: #a855f7;
-}
-
-.ri-facebook-fill{
-  display: flex;
-  padding: 10px;
-  min-height: 10px;
-  width: 30px;
-
-}
-.ri-facebook-fill:hover{
-  background-color: #a855f7;
-  color: black;
-  border-radius: 2px;
-  border: #a855f7;
-}
-
-
-
 @media (width < 750px) {
   nav .checkbox {
     display: block;
@@ -321,7 +266,7 @@ ul li a:hover {
 }
 
 .image img {
-  width: 50%;
+  width: 100%;
   height: 50%;
   border-radius: 100%;
   object-fit: cover;
