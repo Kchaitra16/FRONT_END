@@ -174,17 +174,21 @@ ul li a:hover {
 }
 
 .image img {
-  width: min(50rem, 100%);
+  width: 50%;
+  height: 50%;
   border-radius: 100%;
+  object-fit: cover;
+  border: 2px solid;
 }
 
 .social__media {
   text-align: left;
-  margin-top: 50px;
-  gap: 4rem;
+  margin-top: 100px;
+  gap: 300rem;
 }
 .social__media a {
-  margin: 0 10px;
+  margin: 10px;
+  height: 5px;
   text-decoration: none;
   color: black;
   font-size: 24px;
@@ -193,7 +197,65 @@ ul li a:hover {
 }
 .social__media a:hover {
   color: black;
+  width: 10%;
+  height: 10%;
 }
+.ri-github-fill{
+  display: flex;
+  padding: 10px;
+  min-height: 10px;
+  width: 30px;
+
+}
+.ri-github-fill:hover{
+  background-color: #a855f7;
+  color: black;
+  border-radius: 2px;
+  border: #a855f7;
+
+}
+.ri-instagram-fill{
+  display: flex;
+  padding: 10px;
+  min-height: 10px;
+  width: 30px;
+
+}
+.ri-instagram-fill:hover{
+  background-color: #a855f7;
+  color: black;
+  border-radius: 2px;
+  border: #a855f7;
+}
+.ri-twitter-fill{
+  display: flex;
+  padding: 10px;
+  min-height: 10px;
+  width: 30px;
+
+}
+.ri-twitter-fill:hover{
+  background-color: #a855f7;
+  color: black;
+  border-radius: 2px;
+  border: #a855f7;
+}
+
+.ri-facebook-fill{
+  display: flex;
+  padding: 10px;
+  min-height: 10px;
+  width: 30px;
+
+}
+.ri-facebook-fill:hover{
+  background-color: #a855f7;
+  color: black;
+  border-radius: 2px;
+  border: #a855f7;
+}
+
+
 
 @media (width < 750px) {
   nav .checkbox {
@@ -227,10 +289,41 @@ ul li a:hover {
   }
 
   .image {
-    grid-area: 1/1/5/5;
+    grid-area: 10/5/10/5;
   }
 
   .action__btns {
     margin: auto;
   }
+}
+
+.section1 {
+  background-color: var(--extra-light);
+}
+
+.sec_contant {
+  min-height: 100vh;
+  max-width: var(--max-width);
+  margin: auto;
+  padding: 1rem;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 4rem;
+}
+.description {
+  line-height: 1.5rem;
+  color: var(--text-light);
+  margin-bottom: 2rem;
+}
+.image {
+  display: grid;
+  place-items: center;
+}
+
+.image img {
+  width: 50%;
+  height: 50%;
+  border-radius: 100%;
+  object-fit: cover;
+  border: 2px solid;
 }
