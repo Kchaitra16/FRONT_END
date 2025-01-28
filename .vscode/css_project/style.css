@@ -1,0 +1,58 @@
+*{
+    color: black;
+    text-align: center;
+}
+.body{
+    margin: 0;
+            font-family: Arial;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            width: 100vh;
+            background-color: gainsboro;
+        }
+.otp.inputs input {
+    width: 50px;
+    height: 50px;
+    font-size: 1.25rem;
+    text-align: center;
+    padding: 0;
+    border: 2px solid;
+    border-radius: 8px;
+    background-color: white;
+}
+
+.otp.inputs input :hover {
+    background-color: #255585;
+    color: #111;
+}
+
+.submit_btn {
+    background-color: blueviolet;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1rem;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.submit_btn:hover {
+    background-color: blue;
+    box-shadow: 0 0 25px ;
+    transform:scale(1.1);
+}
+    
+.Resend-link {
+    display: block;
+    font-size: 1.3rem;
+    color:blue;
+    text-decoration: none;
+    margin-top: 10px;
+    transform: scale(1.1);
+}
+
+.Resend-link:hover {
+    text-decoration: underline;
+}
